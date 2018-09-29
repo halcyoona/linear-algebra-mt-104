@@ -1,5 +1,4 @@
 #include<iostream>
-#include <string>
 using namespace std;
 
 class matrix{
@@ -160,7 +159,7 @@ bool matrix::checkingReduceEchelonForm()
 				{
 					for (int k = 0; k < rows; k++)
 					{
-						if (p[k][j] == p[i][j])
+						if (&(p[k][j]) == &(p[i][j]))
 						{
 							continue;
 						}
