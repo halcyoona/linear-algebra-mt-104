@@ -45,7 +45,7 @@ bool is_reducedEche_form(int **matrix, int row, int col) {
 				{
 					for (int k = 0; k < row; k++)
 					{
-						if (matrix[k][j] == matrix[i][j])
+						if (&(matrix[k][j]) == &(matrix[i][j]))
 						{
 							continue;
 						}
