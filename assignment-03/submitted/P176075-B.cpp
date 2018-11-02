@@ -475,9 +475,8 @@ bool matrix::linearDependence()
 		{
 			for (int j = 0; j < columns; j++)
 			{
-				if (i == j)
+				if (i == j && p[i][j] == 1)
 				{
-					p[i][j] == 1;
 					continue;
 				}
 				else{
